@@ -1,0 +1,28 @@
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.config
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.pdb
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.AssemblyReference.cache
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Form1.resources
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Properties.Resources.resources
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.GenerateResource.cache
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.CoreCompileInputs.cache
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.pdb
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.manifest
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.application
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe.manifest
+D:\C_Sharp\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.application
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.config
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.manifest
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.application
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.pdb
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.AssemblyReference.cache
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Form1.resources
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Properties.Resources.resources
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.GenerateResource.cache
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.CoreCompileInputs.cache
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe.manifest
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.application
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe
+D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.pdb
