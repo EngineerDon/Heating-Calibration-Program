@@ -26,3 +26,17 @@ D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Deb
 D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.application
 D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe
 D:\C_Sharp\IFIT_Calibration_Program - 복사본\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.pdb
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.config
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe.manifest
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.application
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.exe
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\bin\Debug\IFIT_Calibration_Program.pdb
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.AssemblyReference.cache
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Form1.resources
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.Properties.Resources.resources
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.GenerateResource.cache
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.csproj.CoreCompileInputs.cache
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe.manifest
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.application
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.exe
+D:\git\Heating-Calibration-Program\IFIT_Calibration_Program\IFIT_Calibration_Program\obj\Debug\IFIT_Calibration_Program.pdb

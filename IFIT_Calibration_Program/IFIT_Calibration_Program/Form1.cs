@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 
@@ -93,6 +94,35 @@ namespace IFIT_Calibration_Program
 
             DrawTextWithBackground(pictureBox1, "ARDUINO", Color.Red);
             DrawTextWithBackground(pictureBox2, "IFIT", Color.Red);
+
+            // DrawItem 이벤트 핸들러 추가
+            comboBox1.DrawItem += (sender, e) =>
+            {
+                // 아이템 인덱스가 -1인 경우 아무것도 그리지 않음
+                if (e.Index < 0) return;
+
+                // 배경색 및 포커스 렌더링
+                e.DrawBackground();
+                e.DrawFocusRectangle();
+
+                // 아이템 텍스트를 가져와서 그리기
+                string itemText = comboBox1.Items[e.Index].ToString();
+                e.Graphics.DrawString(itemText, e.Font, Brushes.Black, e.Bounds);
+            };
+
+            comboBox5.DrawItem += (sender, e) =>
+            {
+                // 아이템 인덱스가 -1인 경우 아무것도 그리지 않음
+                if (e.Index < 0) return;
+
+                // 배경색 및 포커스 렌더링
+                e.DrawBackground();
+                e.DrawFocusRectangle();
+
+                // 아이템 텍스트를 가져와서 그리기
+                string itemText = comboBox5.Items[e.Index].ToString();
+                e.Graphics.DrawString(itemText, e.Font, Brushes.Black, e.Bounds);
+            };
 
             //In order to visualize chart without datasets
             chart1.Series[0].Points.Add(); 
@@ -248,7 +278,6 @@ namespace IFIT_Calibration_Program
 
             listBox2.TopIndex = listBox2.Items.Count - 1;
         }
-
         private void DrawTextWithBackground(PictureBox pictureBox, string text, Color backgroundColor)
         {
             // Create a new Bitmap with the same size as the PictureBox
@@ -260,24 +289,56 @@ namespace IFIT_Calibration_Program
                 // Set the background color
                 g.Clear(backgroundColor);
 
+                // Enable better text rendering
+                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+
                 // Set the font and brush
-                Font font = new Font("Arial", 20);  // Font size 24
+                Font font = new Font("Arial", 25);  // Font size 20
                 Brush brush = Brushes.Black;        // Black color for the text
 
-                // Calculate the size of the text to center it
+                // Calculate the size of the text
                 SizeF textSize = g.MeasureString(text, font);
-                PointF point = new PointF(
-                    (pictureBox.Width - textSize.Width) / 2, // Center horizontally
-                    (pictureBox.Height - textSize.Height) / 2 // Center vertically
-                );
+
+                // Calculate the position to center the text
+                float x = (pictureBox.Width - textSize.Width) / 2;
+                float y = (pictureBox.Height - textSize.Height) / 2;
 
                 // Draw the string at the calculated position
-                g.DrawString(text, font, brush, point);
+                g.DrawString(text, font, brush, new PointF(x + 60, y));
             }
 
             // Set the image of the PictureBox to the Bitmap with the background and centered text
             pictureBox.Image = bitmap;
         }
+        //private void DrawTextWithBackground(PictureBox pictureBox, string text, Color backgroundColor)
+        //{
+        //    // Create a new Bitmap with the same size as the PictureBox
+        //    Bitmap bitmap = new Bitmap(pictureBox.Width, pictureBox.Height);
+
+        //    // Create a Graphics object from the Bitmap
+        //    using (Graphics g = Graphics.FromImage(bitmap))
+        //    {
+        //        // Set the background color
+        //        g.Clear(backgroundColor);
+
+        //        // Set the font and brush
+        //        Font font = new Font("Arial", 20);  // Font size 24
+        //        Brush brush = Brushes.Black;        // Black color for the text
+
+        //        // Calculate the size of the text to center it
+        //        SizeF textSize = g.MeasureString(text, font);
+        //        PointF point = new PointF(
+        //            (pictureBox.Width - textSize.Width) / 2, // Center horizontally
+        //            (pictureBox.Height - textSize.Height) / 2 // Center vertically
+        //        );
+
+        //        // Draw the string at the calculated position
+        //        g.DrawString(text, font, brush, point);
+        //    }
+
+        //    // Set the image of the PictureBox to the Bitmap with the background and centered text
+        //    pictureBox.Image = bitmap;
+        //}
         private void comboBox1_DropDown(object sender, EventArgs e)
         {
             this.comboBox1.Items.Clear();
@@ -845,6 +906,16 @@ namespace IFIT_Calibration_Program
                 button10.BackColor = Color.Blue;
             }
             isLogging = !isLogging;
+        }
+
+        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            comboBox1.DroppedDown = true; // 클릭 시 드롭다운 열기
+        }
+
+        private void comboBox5_MouseClick(object sender, MouseEventArgs e)
+        {
+            comboBox5.DroppedDown = true; // 클릭 시 드롭다운 열기
         }
     }
 }

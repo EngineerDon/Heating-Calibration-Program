@@ -25,7 +25,7 @@ namespace IFIT_Calibration_Program.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("57")]
         public double TargetTemperature {
             get {
                 return ((double)(this["TargetTemperature"]));
@@ -37,7 +37,7 @@ namespace IFIT_Calibration_Program.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
         public int TargetTime {
             get {
                 return ((int)(this["TargetTime"]));

@@ -11,10 +11,10 @@
     <userSettings>
         <IFIT_Calibration_Program.Properties.Settings>
             <setting name="TargetTemperature" serializeAs="String">
-                <value>57</value>
+                <value>0</value>
             </setting>
             <setting name="TargetTime" serializeAs="String">
-                <value>20</value>
+                <value>0</value>
             </setting>
         </IFIT_Calibration_Program.Properties.Settings>
     </userSettings>
