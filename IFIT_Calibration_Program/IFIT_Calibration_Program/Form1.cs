@@ -94,7 +94,7 @@ namespace IFIT_Calibration_Program
 
             DrawTextWithBackground(pictureBox1, "ARDUINO", Color.Red);
             DrawTextWithBackground(pictureBox2, "IFIT", Color.Red);
-
+            
             // DrawItem 이벤트 핸들러 추가
             comboBox1.DrawItem += (sender, e) =>
             {
@@ -143,32 +143,32 @@ namespace IFIT_Calibration_Program
         // TextBox 초기화
         private void InitializeTextBox()
         {
-            textBox1.Font = new Font("Arial", 32);           // 글자 크기 설정
+            textBox1.Font = new Font("Arial", 31);           // 글자 크기 설정
             textBox1.TextAlign = HorizontalAlignment.Center; // 텍스트 가운데 정렬
             textBox1.ReadOnly = true;                        // 읽기 전용 설정
             textBox1.BorderStyle = BorderStyle.FixedSingle;  // 테두리 추가
             textBox1.Text = targetTemperature.ToString("F1"); // 초기 값 설정
 
-            textBox2.Font = new Font("Arial", 32);           // 글자 크기 설정
+            textBox2.Font = new Font("Arial", 31);           // 글자 크기 설정
             textBox2.TextAlign = HorizontalAlignment.Center; // 텍스트 가운데 정렬
             textBox2.ReadOnly = true;                        // 읽기 전용 설정
             textBox2.BorderStyle = BorderStyle.FixedSingle;  // 테두리 추가
             textBox2.Text = targetTime.ToString("F0"); // 초기 값 설정
 
-            textBox3.Font = new Font("Arial", 30);           // 글자 크기 설정
+            textBox3.Font = new Font("Arial", 29);           // 글자 크기 설정
             textBox3.TextAlign = HorizontalAlignment.Center; // 텍스트 가운데 정렬
             textBox3.ReadOnly = true;                        // 읽기 전용 설정
             textBox3.BorderStyle = BorderStyle.FixedSingle;  // 테두리 추가
             textBox3.Text = currentTemperature.ToString("F1");
 
             textBox4.Text = "00 : 00";
-            textBox4.Font = new Font("Arial", 30);           // 글자 크기 설정
+            textBox4.Font = new Font("Arial", 29);           // 글자 크기 설정
             textBox4.TextAlign = HorizontalAlignment.Center; // 텍스트 가운데 정렬
             textBox4.ReadOnly = true;                        // 읽기 전용 설정
             textBox4.BorderStyle = BorderStyle.FixedSingle;  // 테두리 추가
 
             textBox5.Text = "0.0";
-            textBox5.Font = new Font("Arial", 30);           // 글자 크기 설정
+            textBox5.Font = new Font("Arial", 29);           // 글자 크기 설정
             textBox5.TextAlign = HorizontalAlignment.Center; // 텍스트 가운데 정렬
             textBox5.ReadOnly = true;                        // 읽기 전용 설정
             textBox5.BorderStyle = BorderStyle.FixedSingle;  // 테두리 추가
@@ -205,7 +205,7 @@ namespace IFIT_Calibration_Program
         private void ExtractDoubleValue(string input)
         {
             // "SOP,T,"로 시작하는지 확인
-            if (!input.StartsWith("SOP,T,"))
+            if (input.StartsWith("connection"))//SOP,T
             {
                 arduinoResponse = true;
             }
@@ -250,7 +250,10 @@ namespace IFIT_Calibration_Program
                     catch (Exception ex)
                     {
                         //Console.WriteLine($"에러: {ex.Message}");
-                        listBox1.Items.Add($"에러: {ex.Message}");
+                        if (isRunning)
+                        {
+                            listBox1.Items.Add($"에러: {ex.Message}");
+                        }
                     }
                     // 메시지를 처리한 후 버퍼 초기화
                     buffer1.Clear();
@@ -544,7 +547,7 @@ namespace IFIT_Calibration_Program
 
         private void button1_Click(object sender, EventArgs e)
         {
-            targetTemperature += 0.1;
+            targetTemperature += 1.0;
             UpdateTemperatureDisplay();
         }
 
